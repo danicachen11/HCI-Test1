@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cats Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Cozy Cats Café</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="menu.html">Full Menu</a></li>
+                <li><a href="#space">Our Space</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="hero">
+        <img src="images/hero-cat.jpg" alt="Cats in the café">
+        <div class="hero-text">
+            <h2>Welcome to Cozy Cats Café</h2>
+            <p>Relax, sip, and cuddle with adorable cats!</p>
+        </div>
+    </section>
+
+
+    <!-- ⭐ TOP PICKS SECTION -->
+    <section id="top-picks">
+        <h2>Top Picks</h2>
+        <p>Our favorite drinks and treats chosen by our furry staff!</p>
+
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/coffee.jpg" alt="Coffee">
+                <h3>Catpuccino</h3>
+                <p>Our signature espresso with creamy foam.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/cat-treat.jpg" alt="Treat">
+                <h3>Paw Brownie</h3>
+                <p>A fudgy brownie shaped like a cat paw.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/tea.jpg" alt="Tea">
+                <h3>Meow Matcha</h3>
+                <p>Warm matcha latte topped with latte art.</p>
+            </div>
+        </div>
+
+        <a class="menu-button" href="menu.html">View Full Menu →</a>
+    </section>
+
+
+    <!-- OUR SPACE -->
+    <section id="space">
+        <h2>Our Space</h2>
+        <p>Explore our cozy and cat-friendly café!</p>
+
+        <div class="space-gallery">
+            <img src="images/space1.jpg" alt="Café interior" onclick="openLightbox(this)">
+            <img src="images/space2.jpg" alt="Cat lounge" onclick="openLightbox(this)">
+            <img src="images/space3.jpg" alt="Reading corner" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Cozy Cats Café | 123 Cat Street | Purrville</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
